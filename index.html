@@ -1,143 +1,182 @@
-charity-water-landing-page/
+nehas6-netizen.github.io
 │
 ├── index.html
 ├── style.css
-└── images/
-    └── hero-image.jpg
+└── images
+    ├── Charity Water.png
+    └── hero-image.png
 
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
 <head>
-    <title>Clean Water For All</title>
+    <title>Charity: Water</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Bring Clean Water to Communities in Need</h1>
-            <p>
-                Your support can help provide safe water and improve lives 
-                around the world.
-            </p>
-            <button>Take Action</button>
-        </div>
-
-        <img src="images/hero-image.jpg" alt="Person collecting clean water">
-    </section>
+<!-- Top announcement bar -->
+<div class="top-bar">
+    Together, we can bring clean water to every community.
+</div>
 
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>The Global Water Crisis</h2>
+<!-- Navigation -->
+<nav>
+
+    <div class="logo">
+        <img src="images/charity-water.png" alt="Charity Water Logo">
+    </div>
+
+    <div class="nav-links">
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">News</a>
+        <a href="#">FAQ</a>
+        <a href="#">Log in</a>
+        <button class="contact">Contact Us</button>
+    </div>
+
+</nav>
+
+
+<!-- Hero Section -->
+<section class="hero">
+
+    <div class="hero-text">
+
+        <h1>
+            Provide Clean Water For Every Community
+        </h1>
+
         <p>
-            Millions of people lack access to clean and safe water.
-            Together, we can create lasting change.
+            Your support will bring clean, sanitary water to communities in need,
+            improve public health, and enhance water systems, ultimately helping
+            communities function more effectively.
         </p>
-    </section>
+
+        <button class="donate">
+            Donate Now!
+        </button>
+
+    </div>
 
 
-    <!-- Impact Section -->
-    <section class="impact">
-        <h2>Your Impact</h2>
+    <div class="hero-image">
+        <img src="images/hero-image.png" alt="Clean water">
+    </div>
 
-        <div class="cards">
-            <div class="card">
-                <h3>Clean Water</h3>
-                <p>Support sustainable water projects.</p>
-            </div>
-
-            <div class="card">
-                <h3>Healthier Communities</h3>
-                <p>Improve sanitation and daily life.</p>
-            </div>
-
-            <div class="card">
-                <h3>Lasting Change</h3>
-                <p>Help communities thrive.</p>
-            </div>
-        </div>
-    </section>
+</section>
 
 
-    <!-- Call to Action -->
-    <section class="cta">
-        <h2>Be Part of the Solution</h2>
-        <button>Donate Today</button>
-    </section>
-
-
-</body>
-</html>
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    color: #333;
+    font-family: "Proxima Nova", Arial, sans-serif;
+    background-color: #FED8C1;
+    color: #003366;
 }
 
 
+/* Top Bar */
+.top-bar {
+    background-color: #708090;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+}
+
+
+.logo img {
+    width: 150px;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #003366;
+    font-weight: bold;
+}
+
+
+/* Buttons */
+button {
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.contact {
+    background-color: yellow;
+    color: #003366;
+    padding: 12px 25px;
+    border-radius: 25px;
+}
+
+
+.donate {
+    padding: 16px 35px;
+    border-radius: 30px;
+    color: white;
+
+    background: linear-gradient(
+        90deg,
+        yellow,
+        #708090,
+        #003366
+    );
+}
+
+
+/* Hero */
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 50px;
-    background-color: #eaf7ff;
-}
-
-
-.hero img {
-    width: 400px;
-    border-radius: 10px;
+    justify-content: space-between;
+    padding: 70px 60px;
 }
 
 
 .hero-text {
-    max-width: 500px;
+    width: 50%;
 }
 
 
 h1 {
-    font-size: 45px;
+    font-size: 55px;
 }
 
 
-button {
-    background-color: #0077b6;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-    cursor: pointer;
+p {
+    font-size: 20px;
+    line-height: 1.6;
 }
 
 
-.about, .impact, .cta {
-    text-align: center;
-    padding: 50px;
+.hero-image {
+    width: 40%;
 }
 
 
-.cards {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
 }
-
-
-.card {
-    padding: 20px;
-    width: 250px;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-}
-
-
-
-.cta {
-    background-color: #0077b6;
-    color: white;
-}
-
-<img src="images/hero-image.jpg">
